@@ -13,15 +13,13 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-    - name: Whoami
-      run: whoami
     - name: Dependencies
       run: |
         python3 -m pip install --upgrade pip
         pip3 install platformio
-    - name: Static Analysis
-      run: python3 -m platformio check
-    - name: Build
-      run: python3 -m platformio run -e nucleo_f767zi
+#    - name: Static Analysis
+#      run: python3 -m platformio check
+#    - name: Build
+#      run: python3 -m platformio run -e nucleo_f767zi
     - name: Unit Test
-      run: python3 -m platformio test
+      run: python3 -m platformio test - nucleo_f767zi
