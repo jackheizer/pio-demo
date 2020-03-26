@@ -13,6 +13,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
+    - name: Whoami
+      run: whoami
     - name: Dependencies
       run: |
         python3 -m pip install --upgrade pip
