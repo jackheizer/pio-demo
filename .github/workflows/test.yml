@@ -22,4 +22,4 @@ jobs:
 #    - name: Build
 #      run: python3 -m platformio run -e nucleo_f767zi
     - name: Unit Test
-      run: python3 -m platformio test - nucleo_f767zi
+      run: python3 -m platformio test -e nucleo_f767zi
