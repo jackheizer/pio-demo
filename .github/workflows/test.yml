@@ -13,37 +13,11 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-#    - name: Set up Python
-#      uses: actions/setup-python@v1
-#      with:
-#        python-version: '3.x'
-    - name: Install dependencies
+    - name: Dependencies
       run: |
         python3 -m pip install --upgrade pip
         pip3 install platformio
-    - name: Run PlatformIO
+    - name: Static Analysis
+      run: python3 -m platformio check
+    - name: Build
       run: python3 -m platformio run
-
-#name: C/C++ CI
-
-#on:
-#  push:
-#    branches: [ master ]
-#  pull_request:
-#    branches: [ master ]
-
-#jobs:
-#  build:
-
-#    runs-on: ubuntu-latest
-
-#    steps:
-#    - uses: actions/checkout@v2
-#    - name: configure
-#      run: ./configure
-#    - name: make
-#      run: make
-#    - name: make check
-#      run: make check
-#    - name: make distcheck
-#      run: make distcheck
