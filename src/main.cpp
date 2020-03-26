@@ -2,7 +2,7 @@
 #include <USBSerial.h>
 #include <calculator.h>
 
-void blink_once(const DigitalOut& led, unsigned int delay_ms)
+void blink_once(DigitalOut& led, unsigned int delay_ms)
 {
     led = 1;
     ThisThread::sleep_for(delay_ms);
