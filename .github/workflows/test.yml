@@ -20,7 +20,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install platformio
     - name: Run PlatformIO
-      run: platformio run /path/to/project/dir -e <ID_1> -e <ID_2> -e <ID_N>
+      run: platformio run
 
 #name: C/C++ CI
 
