@@ -3,6 +3,8 @@ name: uC CI
 on:
   push:
     branches: [master]
+  pull_reqest:
+    branches: [master]
 
 jobs:
   build:
