@@ -1,4 +1,4 @@
-#include <mbed.h<
+#include <mbed.h>
 #include "unittest_transport.h"
 
 static Serial serial(USBTX, USBRX);
