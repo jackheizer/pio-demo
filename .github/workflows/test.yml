@@ -17,11 +17,11 @@ jobs:
       run: |
         python3 -m pip install --upgrade pip
         pip3 install platformio
-    - name: Flash
-      run: python3 -m platformio run -e nucleo_f767zi --target upload
+#    - name: Flash
+#      run: python3 -m platformio run -e nucleo_f767zi --target upload
 #    - name: Static Analysis
 #      run: python3 -m platformio check
 #    - name: Build
 #      run: python3 -m platformio run -e nucleo_f767zi
-#    - name: Unit Test
-#      run: python3 -m platformio test -e nucleo_f767zi
+    - name: Unit Test
+      run: python3 -m platformio test -e nucleo_f767zi
